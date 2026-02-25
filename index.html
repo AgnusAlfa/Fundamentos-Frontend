@@ -1,46 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Alerta Global: El Impacto del Meteorito se acerca</title>
-    <link rel="stylesheet" href="/ccs/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/ccs/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Alerta Global: El Impacto del Meteorito</title>
 </head>
+
 <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-lightblue rounded mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">ALERTA MUNDO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Asteroides</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Meteoritos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<!-- Header: Se utiliza para agrupar el contenido introductorio, como el título principal o el menú de navegación, funcionando como la cabecera del sitio -->
-    <header>
-<!-- h1: Es el encabezado de mayor nivel jerárquico, se usa para el título más importante del contenido -->
-        <h1>Un Meteorito se acerca a la Tierra</h1>
-<!-- p: Se utiliza para definir párrafos de texto, siendo la unidad básica para presentar la información escrita.  -->
-        <p>Reporte especial sobre la supervivencia del ser humano para el año 2038.</p>
-    </header>
+        <header class="p-5 mb-4 bg-dark text-white rounded-3 shadow">
+            <div class="container-fluid py-5">
+                <h1 class="display-4 fw-bold text-danger">¡Un Meteorito se acerca a la Tierra!</h1>
+                <p class="col-md-8 fs-4">Protocolo de supervivencia activado. Reporte especial para el impacto el 13 de
+                    abril del año 2038. El tiempo se agota.</p>
+            </div>
+        </header>
 
-<!-- Section: Define una sección genérica dentro del documento que agrupa contenido relacionado por un tema en específico  -->
-    <section>
-<!-- article:  Representa una composición autónoma en la página como una noticia o post y podría distribuirse de forma independiente -->
-        <article>
-            <h2>Crónica de una colisión anunciada</h2>
-            <p>
-                Científicos de todo el mundo han confirmado que un meteorito de gran tamaño 
-                entrará en la atmósfera terrestre el 5 de marzo del año 2038. Este fenómeno, 
-                aunque genera temor, es una oportunidad única para estudiar los restos 
-                del sistema solar primitivo y poner prueba nuestra tecnología y sentido de supervivencia.
-            </p>
-            
-            <img src="istockphoto-1367810652-612x612.jpg" alt="Meteorito entrando en la atmósfera">
-        </article>
-    </section>
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+            <div>
+                <strong>Estado del Sistema:</strong> Quedan 4.341 días para la catástrofe global.
+            </div>
+        </div>
 
-<!-- Aside: Se usa para contenido que está relacionado de forma indirecta con el texto principal, como barras laterales, datos curiosos o publicidad -->
-    <aside>
-        <h3>Datos Curiosos</h3>
-        <p>¿Sabías que cada día caen a la Tierra toneladas de polvo espacial? La mayoría se desintegra antes de tocar el suelo.</p>
-    </aside>
+        <section class="row">
+            <article class="col-md-8">
+                <h2 class="text-danger">Crónica de una colisión anunciada</h2>
+                <p>
+                    Científicos de todo el mundo han confirmado que un meteorito entrará en la atmósfera terrestre el 5
+                    de marzo del año 2038.
+                    Este fenómeno es una oportunidad única para estudiar los restos del sistema solar primitivo.
+                </p>
 
-<!-- Representa el pie de página, donde suele ir la información de autoría, derechos de autor o datos de contacto -->
-    <footer>
-        <p>Autor: Jon Titor - Viajero del tiempo</p>
-    </footer>
+                
+                <div class="text-center my-4">
+                    <img src="assets/img/asetoride a tierra.webp" alt="Meteorito" class="img-main-size rounded shadow">
+    
+                    <div class="mt-3">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#alertaEstado">
+                            Verificar Estado del Sitio
+                        </button>
+                    </div>
 
+                    <div class="collapse mt-3" id="alertaEstado">
+                        <div class="alert alert-success shadow-sm" role="alert">
+                        <strong>¡Éxito!</strong> Conexión establecida con los satélites de observación. El sitio está operando correctamente.
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            <aside class="col-md-4">
+                <div class="p-3 bg-white border rounded">
+                    <h3 class="text-danger">Datos Curiosos</h3>
+                    <p>¿Sabías que cada día caen a la Tierra toneladas de polvo espacial? La mayoría se desintegra antes
+                        de tocar el suelo.</p>
+                </div>
+            </aside>
+        </section>
+
+        <footer class="mt-5 py-3 text-center border-top">
+            <p class="text-muted">Autor: <strong>Jon Titor</strong> - Viajero del tiempo</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html
+
+</html>

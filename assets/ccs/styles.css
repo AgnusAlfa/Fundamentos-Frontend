@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue !important;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #dc3545 !important;
+}
+
+/* NOTA: Para resolver la diferencia de proporción de la imagen original, 
+   utilicé la propiedad 'object-fit: cover'. Esto permite forzar el tamaño a 400x300px 
+   sin deformar la imagen, realizando un recorte proporcional automático.*/
+.img-main-size {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
