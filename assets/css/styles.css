@@ -8,11 +8,29 @@ h1, h2, h3, h4, h5, h6 {
     color: #dc3545 !important;
 }
 
-/* NOTA: Para resolver la diferencia de proporción de la imagen original, 
-   utilicé la propiedad 'object-fit: cover'. Esto permite forzar el tamaño a 400x300px 
-   sin deformar la imagen, realizando un recorte proporcional automático.*/
 .img-main-size {
     width: 400px;
     height: 300px;
     object-fit: cover;
+}
+
+/*Diseño boton scroll top*/
+
+.scroll-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    background-color: #dc3545;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.4s;
+}
+
+.scroll-top i {
+    font-size: 24px;
+    line-height: 0;
+    color: #ffffff; 
 }
