@@ -1,0 +1,17 @@
+/* Colores de listas */
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+ul {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+li {
+    margin: 5px 0;
+    font-weight: bold;
+}

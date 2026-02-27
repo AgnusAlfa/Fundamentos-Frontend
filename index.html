@@ -3,95 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Alerta Global: El Impacto del Meteorito</title>
+    <title>Actividad M2 L6</title>
+    <link rel="stylesheet" href="/actividad_m2_l6/asteroidecss/asteroide.css">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-lightblue rounded mb-4">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold" href="#">ALERTA MUNDO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="#">Asteroides</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Meteoritos</a></li>
-                    </ul>
+
+    <button id="btn-toggle">Ocultar lista</button>
+
+    <ul id="mi-lista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <button type="button" class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#miModal">
+        Abrir Reporte del Meteorito
+    </button>
+
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alerta de Impacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-        </nav>
-
-        <header class="p-5 mb-4 bg-dark text-white rounded-3 shadow">
-            <div class="container-fluid py-5">
-                <h1 class="display-4 fw-bold text-danger">¡Un Meteorito se acerca a la Tierra!</h1>
-                <p class="col-md-8 fs-4">Protocolo de supervivencia activado. Reporte especial para el impacto el 13 de
-                    abril del año 2038. El tiempo se agota.</p>
-            </div>
-        </header>
-
-        <div class="alert alert-success d-flex align-items-center" role="alert">
-            <div>
-                <strong>Estado del Sistema:</strong> Quedan 4.341 días para la catástrofe global.
+                <div class="modal-body">
+                    <p>El meteorito entrará en la atmósfera en breve. Asegúrese de que su lista de suministros esté
+                        completa.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
         </div>
-
-        <section class="row">
-            <article class="col-md-8">
-                <h2 class="text-danger">Análisis del impacto Térmico y Atmosférico </h2>
-                <p>
-                    Las simulaciones por supercomputadora sugieren que la densidad del núcleo de este meteorito impedirá su 
-                    desintegración total en la mesosfera. Se espera que la onda de choque generada por la compresión del aire 
-                    sea detectable en cinco continentes. Equipos multidisciplinarios están desplegando sensores gravitacionales 
-                    para capturar datos sin precedentes sobre la materia oscura que compone el rastro de la roca.
-                </p>
-
-                
-                <div class="text-center my-4">
-                    <img src="assets/img/asetoride a tierra.webp" alt="Meteorito" class="img-main-size rounded shadow">
-    
-                    <div class="mt-3">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#alertaEstado">
-                            Verificar Estado del Sitio
-                        </button>
-                    </div>
-
-                    <div class="collapse mt-3" id="alertaEstado">
-                        <div class="alert alert-success shadow-sm" role="alert">
-                        <strong>¡Logrado!</strong> Conexión establecida con los satélites de observación. El sitio está operando correctamente.
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-
-            <aside class="col-md-4">
-                <div class="p-3 bg-white border rounded">
-                    <h3 class="text-danger">Datos Curiosos</h3>
-                    <p>¿Sabías que cada día caen a la Tierra toneladas de polvo espacial? La mayoría se desintegra antes
-                        de tocar el suelo.</p>
-                </div>
-            </aside>
-        </section>
-
-        <footer class="mt-5 py-3 text-center border-top">
-            <p class="text-muted">Autor: <strong>Jon Titor</strong> - Viajero del tiempo</p>
-        </footer>
     </div>
 
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short" style="color: white; font-size: 24px;"></i>
-    </a>
-
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <script src="/actividad_m2_l6/js/meteoro.js"></script>
 </body>
 
 </html>
