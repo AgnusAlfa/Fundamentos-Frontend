@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Recuperamos el color rojo
     $("#mi-lista li").css("color", "red");
 
     // Lógica del botón Ocultar/Mostrar
@@ -14,7 +13,6 @@ $(document).ready(function() {
     });
 
     // Lógica para el Plugin Modal
-    // Si el error persiste, usamos la instancia de Bootstrap directamente
     const miModalEl = document.getElementById('miModal');
     
     if (miModalEl) {
